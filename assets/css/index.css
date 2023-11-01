@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    background-color: #E4e1ee;
     color: black;
     font-feature-settings: "kern";
 }
@@ -40,8 +40,6 @@ header{
 
 nav ul li{
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 nav ul{
     display: flex;
@@ -64,9 +62,20 @@ nav a{
 }
 
 .button1{
-    width: 40px;
+    width:fit-content;
     height:20px;
+    transition: 0.2;
 }
+
+.button1:hover{
+    color: slateblue;
+    width:fit-content;
+    height:20px;
+    transition: 0.2;
+    text-decoration: underline;
+}
+
+
 
 .imagecontainer {
     display:flex;
@@ -91,10 +100,12 @@ nav a{
 #healthy{
     display:flex;
     position:relative;
-    width: 100px;
-    height: 100px;
+    width: 75%;
+    height: 100%;
     justify-content: center;
     align-items: center;
+    color: snow;
+    font-size:;
 }
 
 .SleepWell{
@@ -104,12 +115,9 @@ nav a{
     -webkit-text-fill-color:transparent
 }
 
-@media screen AND (max-width:600px){
-    nav a{
-        padding: 0px;
-    }
-}
+
 
 main {
 padding:0;
+width:100%;
 }
