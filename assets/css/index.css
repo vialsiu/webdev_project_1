@@ -39,6 +39,7 @@ header{
 
 nav ul li{
     list-style: none;
+    overflow: hidden  ;
 }
 nav ul{
     display: flex;
@@ -92,6 +93,7 @@ nav a{
     background:radial-gradient(circle, #ED87F7, #869FF9);
     justify-content: center;
     align-items: center;
+    box-shadow:5px 2px 10px 0 rgba(101, 63, 127, 0.8);
 }
 
 #healthy{
@@ -128,7 +130,7 @@ nav a{
 .sleepytext{
     font-size: 5vw;
     flex-direction: row;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Exo 2', sans-serif;
     margin: 2%;
     text-align: center;
     color:white;
@@ -176,11 +178,22 @@ nav a{
     }
   }
 
+  @media screen and (max-width: 900px) {
+    header{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        height: 180px;
+    }
+
+  }
+
+
 .SleepWell{
     padding-bottom: 0.5%;
     background: -webkit-linear-gradient(#dda4f5,#fcb686);
     -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent
+    -webkit-text-fill-color:transparent;
 }
 
 #logoid{
@@ -189,6 +202,7 @@ nav a{
     max-width: 50vw;
     display: flex;
     justify-content: space-between;
+    padding-left:2.5%;
 }
 
 main {
