@@ -22,7 +22,6 @@ header{
     position: relative;
 }
 
-
 .mainimage{
     -webkit-mask-image: url('/assets/images/moon50.png');
     mask-image: url('/assets/images/moon50.png');
@@ -75,8 +74,6 @@ nav a{
     text-decoration: underline;
 }
 
-
-
 .imagecontainer {
     display:flex;
     justify-content: center;
@@ -95,27 +92,96 @@ nav a{
     background:radial-gradient(circle, #ED87F7, #869FF9);
     justify-content: center;
     align-items: center;
-
 }
+
 #healthy{
     display:flex;
     position:relative;
     width: 75%;
     height: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     color: snow;
-    font-size:;
+    font-size: 500%;
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
+.sleepmask{
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-width: 75%;
+    max-height: 100%;
+    filter: invert(100%);
+    object-fit: contain;
+}
+
+#sleepy{
+    height: auto; 
+    width: 45vw; 
+    filter: invert(100%);
+}
+
+.sleepytext{
+    font-size: 5vw;
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 2%;
+    text-align: center;
+    color:white;
+}
+
+.mainTextContainer
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+    #healthy{
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        width: 75%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sleepy{
+        height: auto; 
+        width: 50vw; 
+        filter: invert(100%);
+        margin: 2vh;
+    }
+
+    .mainTextContainer
+    {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .sleepytext{
+        font-size: 8vw;
+        flex-direction: row;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 2vh;
+        text-align: center;
+        color:white;
+    }
+  }
+
 .SleepWell{
-    padding-bottom: 1.5%;
+    padding-bottom: 0.5%;
     background: -webkit-linear-gradient(#dda4f5,#fcb686);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent
 }
-
-
 
 main {
 padding:0;
