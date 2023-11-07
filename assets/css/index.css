@@ -203,7 +203,19 @@ nav a{
         font-size: 2vw;
         padding-top: 0;
     }
-    
+    .bodytext1 { 
+        text-align:justify; 
+        font-size: small;
+        flex-direction: row;
+        align-items: center;
+        position:relative;
+        color:darkslategrey
+      } 
+      
+    .bodycontainer{
+        font-size:small
+    }
+
   }
 
 
@@ -241,10 +253,11 @@ width:100%;
 
 .bodytext1 { 
     text-align:justify; 
-    font-size: 25px; 
+    font-size:1.6vmax;
     flex-direction: row;
     align-items: center;
     position:relative;
+    color:darkslategrey;
   } 
   
 #sleepimg{
@@ -255,10 +268,16 @@ width:100%;
     border-radius: 50%; 
     shape-outside: circle(); 
     padding: 2vw;
+    height: auto; 
+    width: 20vw; 
 }
 .bodytitle1{
     text-align:center; 
     flex-direction: row;
     align-items: center;
     position:relative;
+}
+
+b{
+    color:#8258b2
 }
