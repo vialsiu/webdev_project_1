@@ -4,6 +4,7 @@ body{
     background-color: #E4e1ee;
     color: black;
     font-feature-settings: "kern";
+    text-align: center; 
 }
 
 header{
@@ -227,3 +228,37 @@ padding:0;
 width:100%;
 }
 
+.bodycontainer{
+    margin: 5vw;
+    margin-top: 5%; 
+    text-align:center; 
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    object-fit: contain;
+}
+
+.bodytext1 { 
+    text-align:justify; 
+    font-size: 25px; 
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+  } 
+  
+#sleepimg{
+    display: flex;
+    align-content: flex-start;
+    float: left; 
+    margin: 5px; 
+    border-radius: 50%; 
+    shape-outside: circle(); 
+    padding: 2vw;
+}
+.bodytitle1{
+    text-align:center; 
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+}
