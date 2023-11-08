@@ -240,7 +240,7 @@ padding:0;
 width:100%;
 }
 
-.bodycontainer{
+.bodycontainer1{
     margin: 5vw;
     margin-top: 5%; 
     text-align:center; 
@@ -263,11 +263,11 @@ width:100%;
 #sleepimg{
     display: flex;
     align-content: flex-start;
-    float: left; 
-    margin: 5px; 
+    float: left;
+    margin-right: 3.5%;  
     border-radius: 50%; 
     shape-outside: circle(); 
-    padding: 2vw;
+    padding: 1.8vw;
     height: auto; 
     width: 20vw; 
 }
@@ -280,4 +280,26 @@ width:100%;
 
 b{
     color:#8258b2
+}
+
+#sleepimg3{
+    display: flex;
+    align-content: flex-start;
+    float: right; 
+    margin-left: 3.5%; 
+    border-radius: 50%; 
+    shape-outside: circle(); 
+    padding: 1.8vw;
+    height: auto; 
+    width: 20vw; 
+}
+
+.imagemap img{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-content:center;
+    margin: 5vw;
+    width:70vw;
+
 }
