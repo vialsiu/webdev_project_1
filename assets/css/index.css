@@ -222,7 +222,7 @@ nav a{
 .SleepWell{
     padding-bottom: 0.5%;
     background: -webkit-linear-gradient(#dda4f5,#fcb686);
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
 
@@ -251,6 +251,15 @@ width:100%;
     object-fit: contain;
 }
 
+.bodycontainer2{
+    text-align:justify; 
+    font-size:1.6vmax;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    color:darkslategrey;
+}
+
 .bodytext1 { 
     text-align:justify; 
     font-size:1.6vmax;
@@ -259,6 +268,15 @@ width:100%;
     position:relative;
     color:darkslategrey;
   } 
+  
+  .bodytext2{
+    text-align:justify; 
+    font-size:1vmax;
+    flex-direction: row;
+    align-items: center;
+    position:relative;
+    color:darkslategrey;
+  }
   
 #sleepimg{
     display: flex;
@@ -270,6 +288,7 @@ width:100%;
     padding: 1.8vw;
     height: auto; 
     width: 20vw; 
+    padding:1.5vh;
 }
 .bodytitle1{
     text-align:center; 
@@ -294,12 +313,26 @@ b{
     width: 20vw; 
 }
 
-.imagemap img{
+.imagemap{
     display: flex;
     position:relative;
     justify-content: center;
     align-content:center;
     margin: 5vw;
-    width:70vw;
-
+    max-width: 50%;
+    max-height: 50%;
+    shape-outside:circle();
 }
+
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+
