@@ -68,7 +68,7 @@ nav a{
 }
 
 .button1:hover{
-    color: slateblue;
+    color: plum;
     width:fit-content;
     height:20px;
     transition: 0.2;
@@ -278,7 +278,7 @@ width:100%;
     color:darkslategrey;
   }
   
-#sleepimg{
+.sleepimg{
     display: flex;
     align-content: flex-start;
     float: left;
@@ -290,6 +290,7 @@ width:100%;
     width: 20vw; 
     padding:1.5vh;
 }
+
 .bodytitle1{
     text-align:center; 
     flex-direction: row;
