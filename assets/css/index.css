@@ -17,7 +17,7 @@ header{
     display: flex;
     justify-content: space-between;
     height: 120px;
-    background-color: white;
+    background-color:white;
 }
 
 .logo{
@@ -190,46 +190,12 @@ nav a{
     }
   }
 
-  @media screen and (max-width: 900px) {
-    header{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        max-height: 150px;
-        margin:0;
-        padding:0;
-        padding-bottom: 2dvh;
-    }
-    nav a {
-        padding-left: 2vw;
-        padding-right: 2vw;
-        margin-left:0px;
-    }
-    .button1{
-        font-size: 2vw;
-        padding-top: 0;
-    }
-    .bodytext1 { 
-        text-align:justify; 
-        font-size: small;
-        flex-direction: row;
-        align-items: center;
-        position:relative;
-        color:darkslategrey
-      } 
-      
-    .bodycontainer{
-        font-size:small
-    }
-
-  }
-
-
 .SleepWell{
     padding-bottom: 0.5%;
-    background: -webkit-linear-gradient(#dda4f5,#fcb686);
+    background: linear-gradient(.25turn, #dc6ee7, 40%, rgb(243, 179, 75));
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
+    font-family:
 }
 
 #logoid{
@@ -334,21 +300,54 @@ b{
     text-decoration: none;
     padding:0;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     padding-left:2.5%;
 }
 
-    .movinggif
+.sub-title{
+    padding-left:2%;
+    margin:0% 0% 0% 0%;
+    display:flex;
+    object-fit:contain;
+    background-color:white;
+    color:#c1acdb;
+}
+.sub-title h1{
+    padding-right:5%;
+    font-size:3vw;
+    display:flex;
+}
+
+section{
+    object-fit:contain;
+    background-color: #eeedf2;
+    padding:2%;
+    display:flex;
+}
+
+    section p {
+    font-size: 135%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top:0;
+    margin-bottom:0;
+    color:#514f54;
+    }
+
+    section a
     {
-    align-items:flex-start;
+    align-items:flex-end;
+    padding-left:2.8%;
+    display:flex;
+    object-fit:fill;
     }
     .static{
     position:absolute;
     margin-right: 3.5%;  
-    padding: 1.8vw;
-    height: auto; 
-    width: 20vw; 
-    padding:1.5vh;
+    padding:0;
+    height: 32vh; 
+    width: auto; 
+    padding:0;
     }
     .static:hover{
     opacity:0;
@@ -356,50 +355,93 @@ b{
     }
     .active{
     margin-right: 3.5%;  
-    padding: 1.8vw;
-    height: auto; 
-    width: 20vw; 
-    padding:1.5vh;
+    padding:0;
+    height: 32vh; 
+    width: auto; 
+    padding:0;
 }
 
 
 .breadcrumb{
         margin:0;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
         list-style: none;
-        background-color:#E4e1ee;
-        decoration:none;
+        background-color:#e3dce6;
         text-align:start;
         }
         
       .breadcrumbItem{
         display:inline-flex;
-        font-size: 3vh;
-        decoration:none;
+        font-size: 2vh;
         }
 
         .breadcrumb li+li :before{
-            padding: 2vw;
+            padding: 1vw;
             color: darkgray;
             content: "/";
           }
           .breadcrumbItem a{
             color: darkgrey;
             text-decoration: none;
-            size:3vh;
+            size:2vh;
           }
           
           .breadcrumbItem a:hover{
             color: purple;
           }
-}
+
 
 .parabreak{
    color:#8258b2;
-   size:5rem;
+   font-size:200%
 }
 
-section{
-    background-color: lavender;
-}
+@media screen and (max-width: 900px) {
+    header{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        max-height: 150px;
+        margin:0;
+        padding:0;
+        padding-bottom: 2dvh;
+    }
+    nav a {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-left:0px;
+    }
+    .button1{
+        font-size: 2vw;
+        padding-top: 0;
+    }
+    .bodytext1 { 
+        text-align:justify; 
+        font-size: small;
+        flex-direction: row;
+        align-items: center;
+        position:relative;
+        color:darkslategrey
+      } 
+      
+    .bodycontainer{
+        font-size:small
+    }
+    .parabreak{
+        font-size:125%;
+     }
+     section{
+        display: flex;
+        align-items: center;
+        margin:0;
+        padding:0;
+        padding-bottom: 2dvh;
+     }
+  }
+
+  .info-p{
+    padding-left:5%;
+    padding-right:5%;
+    font-weight:800;
+  }
