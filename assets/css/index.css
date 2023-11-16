@@ -149,53 +149,12 @@ nav a{
     width: 45%;
 }
 
-@media screen and (max-width: 600px) {
-    #healthy{
-        display:flex;
-        flex-direction: column;
-        position:relative;
-        width: 75%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #sleepy{
-        height: auto; 
-        width: 50vw; 
-        filter: invert(100%);
-        margin: 2vh;
-    }
-
-    .mainTextContainer{
-        display: flex;
-        flex-direction: column;
-        width: 80vw;
-    }
-
-    .sleepytext{
-        font-size: 8vw;
-        flex-direction: row;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        margin: 2vh;
-        text-align: center;
-        color:white;
-    }
-    .button1{
-        font-size: 10vw;
-        padding-top: 0;
-    }
-    .logo {
-        padding-left: 0%;
-    }
-  }
 
 .SleepWell{
     padding-bottom: 0.5%;
     background: linear-gradient(.25turn, #dc6ee7, 40%, rgb(243, 179, 75));
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
-    font-family:
 }
 
 #logoid{
@@ -397,6 +356,12 @@ section{
    font-size:200%
 }
 
+.info-p{
+    padding-left:5%;
+    padding-right:5%;
+    font-weight:800;
+  }
+
 @media screen and (max-width: 900px) {
     header{
         display: flex;
@@ -440,8 +405,47 @@ section{
      }
   }
 
-  .info-p{
-    padding-left:5%;
-    padding-right:5%;
-    font-weight:800;
+  @media screen and (max-width: 600px) {
+    #healthy{
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        width: 75%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sleepy{
+        height: auto; 
+        width: 50vw; 
+        filter: invert(100%);
+        margin: 2vh;
+    }
+
+    .mainTextContainer{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .sleepytext{
+        font-size: 8vw;
+        flex-direction: row;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 2vh;
+        text-align: center;
+        color:white;
+    }
+    .button1{
+        font-size: 10vw;
+        padding-top: 0;
+    }
+    .logo {
+        padding-left: 0%;
+    }
   }
+  @media screen and (max-width: 1524px) {
+    section{
+        flex-direction: column;
+    }
