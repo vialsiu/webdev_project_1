@@ -1,3 +1,5 @@
+html { font-size: 16px; }
+
 body{
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@ body{
 }
 
 #page2{
-    background-color: white;
+    background-color:#a8a5c6;
     padding:0%;
     text-align:justify;
 }
@@ -96,7 +98,7 @@ nav a{
     top:0px;
     left:0px;
     filter: saturation(50%);
-    background:radial-gradient(circle, #ED87F7, #869FF9);
+    background:radial-gradient(circle, #eb9bf3, #95abf9);
     justify-content: center;
     align-items: center;
     box-shadow:5px 2px 10px 0 rgba(101, 63, 127, 0.8);
@@ -154,6 +156,7 @@ nav a{
     padding-bottom: 0.5%;
     background: linear-gradient(.25turn, #dc6ee7, 40%, rgb(243, 179, 75));
     -webkit-background-clip: text;
+    background-clip:text;
     -webkit-text-fill-color:transparent;
 }
 
@@ -180,15 +183,6 @@ width:100%;
     align-items: center;
     flex-direction: row;
     object-fit: contain;
-}
-
-.bodycontainer2{
-    text-align:justify; 
-    font-size:1.6vmax;
-    flex-direction: row;
-    align-items: center;
-    position:relative;
-    color:darkslategrey;
 }
 
 .bodytext1 { 
@@ -232,25 +226,25 @@ b{
 .subheading{
     display:block;
     height:4vh;
-    background-color:#c8b5eb;
+    background-color:#6b5c7d;
 }
 
 .sub-title{
     padding-left:2%;
-    margin:0% 0% 0% 0%;
     display:flex;
     object-fit:contain;
     background-color:white;
-    color:#c1acdb;
+    color: #58556e
 }
 .sub-title h1{
     padding-right:5%;
+    padding-left:2.5%;
     font-size:3vw;
     display:flex;
 }
 
 section{
-    background-color: #eeedf2;
+    background-color: #e8e9e9;
     object-fit:contain;
     padding:2%;
     display:flex;
@@ -274,6 +268,8 @@ object-fit:fill;
 }
 
 .boogaloo{
+    font-family:serif;
+    font: weight 700;
 }
 
 .suiiii{
@@ -289,9 +285,11 @@ padding-right: 20px;
     position:absolute;
     margin-right: 3.5%;  
     padding:0;
-    height: 32vh; 
+    height: 30vh; 
     width: auto; 
     padding:0;
+    filter:contrast(2);
+    filter:sepia(80);
     }
     .static:hover{
     opacity:0;
@@ -300,33 +298,27 @@ padding-right: 20px;
     .active{
     margin-right: 3.5%;  
     padding:0;
-    height: 32vh; 
+    height: 30vh; 
     width: auto; 
     padding:0;
 }
-
-.textboxinf{
-    display:flex;
-    margin:0;
-    text-align:justify; 
-    font-size:1.5vmax;
-    flex-direction: row;
-    align-items: center;
-    position:relative;
-    color:#444444;
-    padding-bottom: 2vh;
-    padding: 1.5vw;
-}
-
     .parabreak{
         color:#8258b2;
         font-size:200%
      }
      
+     .infobody{
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        height:50vh;
+     }
+
      .info-p{
          padding-left:5%;
          padding-right:5%;
          font-weight:800;
+         color:white;
        }
      
 
@@ -337,26 +329,28 @@ padding-right: 20px;
         list-style: none;
         background-color:#eeedf2;
         text-align:start;
+        padding-left:5%;
         }
         
       .breadcrumbItem{
         display:inline-flex;
-        font-size: 1vw;
+        font-size: 5vw;
         }
 
         .breadcrumb li+li :before{
             padding: 1vw;
-            color: 	#9590c5;
-            content: "/";
+            color: #747192;
+            content: "→";
+            content:"✩₊˚.⋆☾⋆⁺₊✧";
           }
           .breadcrumbItem a{
-            color: #9590c5;
+            color: #747192;
             text-decoration: none;
-            size:1vw;
-          }
+            font-size: calc(0.5rem + 0.8vw);
+         }
           
           .breadcrumbItem a:hover{
-            color: purple;
+            color: #c8b5eb;
           }
 
 @media screen and (max-width: 900px) {
@@ -375,7 +369,7 @@ padding-right: 20px;
         margin-left:0px;
     }
     .button1{
-        font-size: 1.5vw;
+        font-size: calc(1vw + 0.5rem);
         padding-top: 0;
     }
     .bodytext1 { 
@@ -400,7 +394,9 @@ padding-right: 20px;
         padding:0;
         padding-bottom: 2dvh;
      }
-  }
+     .boogaloo{
+        padding: calc(1rem + 1vw); }
+     }
 
   @media screen and (max-width: 600px) {
     #healthy{
@@ -435,7 +431,6 @@ padding-right: 20px;
         color:white;
     }
     .button1{
-        font-size: 2vw;
         padding-top: 0;
     }
     .logo {
@@ -443,3 +438,34 @@ padding-right: 20px;
     }
   }
 
+  @media screen and (max-width: 412px) {
+
+    .suiiii{
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        padding-bottom: 5%;
+        float:none;
+
+    }
+    .boogaloo{
+        font-size: calc(0.5rem + 0.8vw);
+    }
+    .sub-title{
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-title h1{
+        font-size: 1.4rem;
+    }
+
+    .static{
+        height: 36vh; 
+        width: auto; 
+    }
+    .active{
+        height: 36vh; 
+        width: auto; 
+    }
+
+}
