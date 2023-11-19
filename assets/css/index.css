@@ -216,6 +216,9 @@ width:100%;
 b{
     color:#8258b2
 }
+.bguide{
+    color: #58556e;;
+}
 
 #sleepimg3{
     display: flex;
@@ -285,6 +288,26 @@ padding-right:7%;
     font-family:serif;
     font: weight 700;
 }
+
+.boogaloo2{
+        font-family:serif;
+        font: weight 700;
+        background-repeat:no-repeat;
+        background-image: url("../images/sleeping7.jpg"), url("../images/nightsky.jpg");
+        background-blend-mode:color-dodge;
+        filter:sepia(20%);
+      }
+      #sleepimg6{
+        margin-right: 3.5%;  
+        padding:0;
+        height: 30vh; 
+        width: auto; 
+        padding:0;
+      }
+      #transparent{
+      width:0.1vw;
+      height:auto;
+      }
 
 .suiiii{
 display: flex;
@@ -513,6 +536,9 @@ padding-right: 20px;
      .boogaloo{
         padding: calc(1rem + 1vw);
      }
+     .boogaloo2{
+        padding: calc(1rem + 1vw);
+     }
 
      .photogallery ul li img{
         width: 30vw;
@@ -577,6 +603,9 @@ padding-right: 20px;
 
     }
     .boogaloo{
+        font-size: calc(0.5rem + 0.8vw);
+    }
+    boogaloo2{
         font-size: calc(0.5rem + 0.8vw);
     }
 
