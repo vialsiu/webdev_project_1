@@ -15,6 +15,12 @@ body{
     text-align:justify;
 }
 
+#page3{
+    background-color:whitesmoke;
+    padding:0%;
+    text-align:justify;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -235,14 +241,17 @@ b{
     object-fit:contain;
     background-color:white;
     color: #58556e;
-    padding-left:7vw;
+    padding-left:9.5vw;
 }
-.sub-title h1{
-    padding-right:5%;
-    padding-left:2.5%;
-    font-size:calc(1rem+1vw);
+
+#sub-title-gallery{
     display:flex;
+    object-fit:contain;
+    background-color:white;
+    color: #58556e;
+    padding-left:12vw;
 }
+
 
 section{
     background-color: #e8e9e9;
@@ -375,11 +384,6 @@ padding-right: 20px;
             color: #c8b5eb;
           }
 
-          .topimg{
-            background-image: url('https://assets.nhs.uk/campaigns-cms-prod/images/sleep-banner-large-compressed.width-1440.jpg'); 
-            background-position: center center;
-          }
-
           #stretchimg 
           {
               display:flex;
@@ -410,10 +414,58 @@ padding-right: 20px;
                 object-fit: cover;
               }
 
+              body::-webkit-scrollbar {
+                display: none;
+              }
 
-          iframe{
-            width:100vw;
-            height:56.25vw;
+          .shelf{
+            margin: 0;
+            padding: 0;
+          }
+
+          .photogallery{
+            display: flex;
+            justify-content: center;
+            background-color: #c5c3cd;
+
+          }
+
+          .photogallery ul
+          {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            align-content: flex-start;
+            margin: 0;
+            width: 80vw;
+            list-style-type: none;
+            padding-left: 2.5vw;
+            padding-right: 2.5vw;
+            padding-top: 1rem;       
+            padding-bottom: 1rem;
+          }
+
+          .photogallery ul li
+          {
+              text-decoration:none;
+              height: auto;
+              margin-right: 2.5vw;  
+              margin-left: 2.5vw;      
+              margin-top: 1rem;       
+              margin-bottom: 1rem;
+          }
+
+          .photogallery ul li img
+          {
+              width: 15vw;
+          }
+
+          .photogallery ul li:hover
+          {
+              position:relative;
+              transition:all ease 0.2s;
+              cursor:pointer;
+              transform: scale(1.1); 
           }
 
 
@@ -459,8 +511,17 @@ padding-right: 20px;
         padding-bottom: 2dvh;
      }
      .boogaloo{
-        padding: calc(1rem + 1vw); }
+        padding: calc(1rem + 1vw);
      }
+
+     .photogallery ul li img{
+        width: 30vw;
+     }
+     .photogallery ul li{
+        margin-left:5vw;
+        margin-right:5vw;
+    }
+}
 
   @media screen and (max-width: 600px) {
     #healthy{
@@ -499,6 +560,9 @@ padding-right: 20px;
     }
     .logo {
         padding-left: 0%;
+    }
+    #sub-title-h1{
+        font-size:1.5rem;
     }
   }
 
